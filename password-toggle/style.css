@@ -1,0 +1,46 @@
+/*  Password Toggle */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(36, 70, 105);
+}
+
+.maino {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  height: 95vh;
+}
+
+input {
+  width: 15rem;
+  height: 3rem;
+  margin: 1rem;
+  border: 0.2rem solid darkslategray;
+  border-radius: 0.5rem;
+  color: darkslategray;
+}
+
+button {
+  background-color: white;
+  color: darkslategray;
+  border: 0.2rem solid darkslategray;
+  border-radius: 0.5rem;
+  width: 10rem;
+  height: 3rem;
+}
+
+button:hover,
+button:focus,
+input:focus {
+  border: 0.2rem solid rgb(1, 164, 164);
+}
+
+.btn-red {
+  border: 0.2rem solid rgb(160, 0, 0);
+}
