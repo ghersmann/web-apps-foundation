@@ -1,4 +1,4 @@
-//Light switch
+//Light Switch
 
 const button = document.querySelector("button");
 const html = document.querySelector("html");
@@ -23,4 +23,5 @@ function buttonClick() {
   } else {
     button.innerText = turnOn;
   }
+  button.classList.toggle("btn-bright");
 }
