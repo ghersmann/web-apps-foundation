@@ -1,4 +1,4 @@
-/* Counter */
+/* Color Mixer */
 
 *,
 ::after,
@@ -51,7 +51,6 @@ input[type="range"]::-moz-range-track {
 .red::-moz-range-track {
   background: red;
 }
-
 .blue::-moz-range-track {
   background: blue;
 }
@@ -67,7 +66,6 @@ input[type="range"]::-webkit-slider-runnable-track {
 .red::-webkit-slider-runnable-track {
   background: red;
 }
-
 .blue::-webkit-slider-runnable-track {
   background: blue;
 }

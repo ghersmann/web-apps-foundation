@@ -1,6 +1,5 @@
 // Counter
 
-const body = document.body;
 const main = document.querySelector("main");
 const reset = document.querySelector("button");
 const counter = document.querySelector(".counter");
@@ -12,7 +11,7 @@ let percentColor = 0;
 
 main.addEventListener("click", addCount);
 reset.addEventListener("click", resetCount);
-body.addEventListener("keypress", function (whichKey) {
+document.addEventListener("keypress", function (whichKey) {
   if (whichKey.key === " " || whichKey.key === "Enter") {
     addCount();
   }

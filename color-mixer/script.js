@@ -1,4 +1,4 @@
-// Counter
+// Color Mixer
 
 const red = document.querySelector(".red");
 const blue = document.querySelector(".blue");
