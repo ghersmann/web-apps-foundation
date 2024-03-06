@@ -1,0 +1,51 @@
+/* ToDo App */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: dodgerblue;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  width: 100vw;
+  height: 80vh;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+/* input:text  */
+#new-todo {
+  font-family: inherit;
+  border: 0.2rem transparent;
+  height: 1.5rem;
+  width: 17rem;
+  box-shadow: 0.3rem 0.3rem black;
+}
+
+button {
+  font-family: inherit;
+  margin-left: 1rem;
+  background-color: white;
+  border-radius: 0;
+  border: 0.2rem transparent;
+  height: 1.5rem;
+  box-shadow: 0.3rem 0.3rem black;
+}
+
+ul {
+  padding-top: 1rem;
+  position: absolute;
+  list-style: none;
+  left: -0.3rem;
+  line-height: 2;
+  font-size: 1.2rem;
+}
