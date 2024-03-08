@@ -22,20 +22,22 @@ const storedTodoList = localStorage.getItem("todolist");
 //Check if local storage is empty and add a default
 if (storedTodoList !== null) {
   todoList = JSON.parse(storedTodoList);
-  renderTodoList(todoList);
 } else {
   todoList = {
     todos: [
       {
         id: null,
-        description: "Do NOT Forget to buy COFFEE!",
-        done: null,
+        description:
+          "Looks like it's all done, well done! Do NOT Forget to buy COFFEE!",
+        done: true,
       },
     ],
   };
-  renderTodoList(todoList);
+
   saveList();
 }
+
+renderTodoList(todoList);
 
 //Capture the button clicks
 btnAddTask.addEventListener("click", addNewTodo);
@@ -121,6 +123,27 @@ function checkCheckbox(event) {
   const todo = liElement.todoObj;
   //Update the object when the box is checked
   todo.done = checkedBox.checked;
+  saveList();
+}
+
+//remove done todos
+const removes = document.querySelector("#removeTodos");
+removes.addEventListener("click", removeTodos);
+
+// Function to remove done todos
+function removeTodos() {
+  // Filter out todos that are not done
+  const doneTodos = todoList.todos.filter(function (todo) {
+    return !todo.done;
+  });
+
+  // Update todoList with undone todos
+  todoList.todos = doneTodos;
+
+  // Save the updated todoList
+  console.log(todoList);
+  saveList();
+  renderTodoList(todoList);
 }
 
 function saveList() {
