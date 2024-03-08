@@ -13,10 +13,22 @@
         <h1>TODODOODODODODO</h1>
     </header>
     <main>
-        <form>
+        <form class="input-form">
             <input type="text" name="new-todo" id="new-todo" placeholder="Do something...">
             <button id="add-todo">Add New ToDo</button>
-            <ul id="list">
+        </form>
+        <h2>Filter ToDo's</h2>
+        <form class="filter" autocomplete="off" id="filters">
+            <input type="radio" name="filter-btn" id="all" value="all" checked>
+            <label for="all">All ToDos</label>
+            <input type="radio" name="filter-btn" id="open" value="open">
+            <label for="open">Open ToDos</label>
+            <input type="radio" name="filter-btn" id="done" value="done">
+            <label for="done">Done ToDos</label>
+        </form>
+        <h2>ToDo List</h2>
+        <form class="todolist">
+            <ul class="to-left" id="list">
             </ul>
         </form>
     </main>

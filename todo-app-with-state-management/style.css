@@ -14,12 +14,17 @@ body {
   height: 80vh;
   margin: 0 auto;
   padding: 2rem;
+  position: relative;
 }
 
 header {
   font-weight: 700;
   font-size: 1.5rem;
   padding-bottom: 1rem;
+}
+
+form {
+  margin-bottom: 4rem;
 }
 
 /* input:text  */
@@ -42,10 +47,21 @@ button {
 }
 
 ul {
-  padding-top: 1rem;
-  position: absolute;
   list-style: none;
-  left: -0.3rem;
   line-height: 2;
   font-size: 1.2rem;
+}
+
+.to-left {
+  position: relative;
+  left: -2rem;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter input {
+  margin-left: 1rem;
 }
